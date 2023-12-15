@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sangilbie Caoile</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@700;800&family=Jura:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/global.css">
+    </head>
+
+    <body>
+        <header>
+            <form class="theme">
+                <fieldset>
+                    <input type="radio" id="light" name="theme" checked>
+                    <input type="radio" id="blue" name="theme">
+                    <input type="radio" id="green" name="theme">
+                    <input type="radio" id="pink" name="theme">
+                    <input type="radio" id="dark" name="theme">
+                </fieldset>
+            </form>
+            <nav>
+                <ul>
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="index.html#about"><li>About Me</li></a>
+                    <a href="index.html#projects"><li>My Projects</li></a>
+                    <a href="index.html#contact"><li>Contact Me</li></a>
+                    <a href="gallery.html"><li>My Gallery</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero" id="home">
+                <img src="images/hero_image.svg">
+                <h2>Hi, I’m Sanji!</h2>
+                <h1>I ASPIRE TO BE A PROFESSIONAL PROGRAMMER</h1>
+                <p>I am a passionate learner that is eager to learn more about the vast knowledge about programming. Aiming to become a professional in various fields including Front-end and Back-end web development.</p>
+                <a href="#about"><button>Get to Know Me More!</button></a>
+            </section>
+            <section id="about">
+                <div class="about_me">
+                    <div><img src="images/about_image1.png"></div>
+                    <div>
+                        <h2>About Me</h2>
+                        <p>My full name is Sangilbie Dy Caoile and I am currently a First-Year Student studying Computer Science at the University of Makati.
+                            <br><br>
+                            For my Education, I am not an achiever of some sort but I did get some awards along my life journey.
+                            <br><br>
+                            Despite this, I decided to study Computer Science, which I felt I would be the most passionate about.
+                            </p>
+                    </div>
+                </div>
+                
+                <div class="about_more">
+                    <div><img src="images/about_image2.png"></div>
+                    <div>
+                        <h2>More About Me</h2>
+                        <p>
+                            My goal is to become financially free as soon as possible and live life the way I want to be.
+                            <br><br>
+                            To achieve this, I am eagerly studying HTML, CSS, and Java to widen my knowledge and learn more. I trust myself as I am a fast learner when something intrigues me.
+                            <br><br>
+                            As for my experiences, I am currently working at McDonald’s where I am most of the time stationed at the kitchen.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <h2>My Projects</h2>
+                <p>These are the projects I did over the past 3 months of learning HTML and CSS. Featured in here are the recreation of a webpage from YouTube and Abstract,  and a school activity.</p>
+            
+                <div class="card left">
+                    <div>
+                        <div><h2>YouTube Replica</h2></div>
+                        <div><p>I started this project when I was still starting to learn HTML and CSS. I followed a YouTube course and finished it. This project has allowed me to grasp the basics of front-end web development.</p></div>
+                    </div>
+                    <div><a target="_blank" href="https://scaoile.github.io/YouTube/"><img src="images/youtube.png"></a></div>
+                </div>
+
+                <div class="card right">
+                    <div>
+                        <div><h2>Abstract Replica</h2></div>
+                        <div><p>This project tested my current skills at that time and I can safely say that I learned a lot after finishing it. I look forward to recreating more websites and improving myself.</p></div>
+                    </div>
+                    <div><a target="_blank" href="https://scaoile.github.io/Abstract/"><img src="images/abstract.png"></a></div>
+                </div>
+                
+                <div class="card left">
+                    <div>
+                        <div><h2>School Activity</h2></div>
+                        <div><p>This activity made me realize that front-end web development truly requires a skill in design. As you will have a hard time creating a visually appealing website when you can’t even properly make a design.</p></div>                        
+                    </div>
+                    <div><a target="_blank" href="https://scaoile.github.io/CAOILE-S.-/"><img src="images/ccis.png"></a></div>
+                </div>
+            </section>
+            <section class="contact" id="contact">
+                <h2>Contact Me</h2>
+                <p>If you are interested to message me feel free to try this form or contact me through my contact details.</p>
+                <div>
+                    <form>
+                        <label for="Name" class="name">Name</label>
+                        <input type="text" class="message">
+    
+                        <label for="email">E-mail</label>
+                        <input type="text" class="message">
+    
+                        <label for="message">Message</label>
+                        <textarea type="text" class="message field"></textarea>
+    
+                        <a href="#home"><button>Send Message</button></a>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="left_footer"> 
+                    <h2>Contact Details</h2>
+                    <p>
+                        Mobile No: 0929 857 2020<br>
+                        E-Mail: sangilbie@gmail.com
+                    </p>
+                </div>
+                <div class="middle_footer">
+                    <h2>Quick Links</h2>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Me</a>
+                    <a href="#projects">My Projects</a>
+                    <a href="#contact">Contact Me</a>
+                    <a href="">My Gallery</a>
+                </div>
+                <div class="right_footer">
+                    <h2>Socials</h2>
+                    <p>Follow me on the internet</p>
+                    <div>
+                        <a target="_blank" href="https://www.facebook.com/sangilbie"><img src="images/Facebook.svg"></a>
+                        <a target="_blank" href="https://www.instagram.com/sanjj.mp4/"><img src="images/Instagram Circle.svg"></a>
+                        <a target="_blank" href="scaoile https://github.com/scaoile"><img src="images/GitHub.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </body>
+</html>
+

@@ -1,0 +1,242 @@
+:root {
+    --clr--body: #F5F5F5;
+    --clr--text: #424242;
+    --clr--h1: #131313;
+    --clr--h2: #292929;
+    --clt-card: #FFFFFF;
+    --clr--border: #424242;
+
+    margin: 0;
+}
+
+.theme {
+
+}
+
+.theme>fieldset {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 0;
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.theme input[type="radio"] {
+    appearance: none;
+    width: 0.6rem;
+    height: 0.6rem;
+    outline: 0.2rem solid var(--radio--color, currentColor);
+    outline-offset: 0.2rem;
+    border-radius: 100px;
+}
+
+.theme input[type="radio"]:checked {
+    background-color: var(--radio--color);
+}
+
+#light {
+    --radio--color: #d4d4d4;
+}
+
+#blue {
+    --radio--color: #C4D3E9;
+}
+
+#green {
+    --radio--color: #7EE3C7;
+}
+
+#pink {
+    --radio--color: #E7D1C9;
+}
+
+#dark {
+    --radio--color: #1F2232;
+}
+
+:root:has(#light:checked) {
+    --clr--body: #F5F5F5;
+    --clr--text: #424242;
+    --clr--border: #424242;
+    --clr--h1: #131313;
+    --clr--h2: #292929;
+    --clt-card: #FFFFFF;
+    --clr--footer: #FFFFFF;
+}
+
+:root:has(#blue:checked) {
+    --clr--body: #C4D3E9;
+    --clr--text: #3C3744;
+    --clr--border: #424242;
+    --clr--h1: #131313;
+    --clr--h2: #1E1B22;
+    --clt-card: #FFFFFF;
+    --clr--footer: #FFFFFF;
+}
+
+:root:has(#green:checked) {
+    --clr--body: #CEF3F3;
+    --clr--text: #424242;
+    --clr--border: #424242; 
+    --clr--h1: #131313;
+    --clr--h2: #1E1B22;
+    --clt-card: #FFFFFF;
+    --clr--footer: #FFFFFF;
+}
+
+:root:has(#pink:checked) {
+    --clr--body: #E7D1C9;
+    --clr--text: #424242;
+    --clr--border: #424242;
+    --clr--h1: #131313;
+    --clr--h2: #292929;
+    --clt-card: #FFFFFF;
+    --clr--footer: #FFFFFF;
+}
+
+:root:has(#dark:checked) {    
+    --clr--body: #141216;
+    --clr--text: #FFFFFF;
+    --clr--border: #424242;
+    --clr--h1: #FFFFFF;
+    --clr--h2: #FFFFFF;
+    --clr--footer: #FFFFFF;
+    --clt-card: #292929;
+}
+
+* {
+    font-family: Jura;
+    margin: 0;
+    color: var(--clr--text);
+    font-size: clamp(0.5rem, -0.5rem + 2.667vw, 2rem);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: var(--clr--body);
+}
+
+h1, h2{
+    font-family: Anddada Pro;
+}
+
+h1 {
+    font-size: clamp(1rem, -2.333rem + 8.889vw, 4.5rem);
+    font-weight: bold;
+    color: var(--clr--h1);
+}
+
+h2 {
+    font-weight: extra-bold;
+    font-size: clamp(0.7rem, -1.167rem + 4.978vw, 3.5rem);
+    color: var(--clr--h2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5rem;
+    margin-inline: auto;
+    max-width: 3700px;
+    background-color: var(--clr--body);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
+nav a {
+    padding: 0 1rem;
+    text-decoration: none;
+    color: var(--clr--h2);
+    font-weight: 700;
+    line-height: clamp(3rem, 1.667rem + 3.556vw, 5rem);
+    font-size: clamp(0.5rem, -0.5rem + 2.667vw, 2rem);
+    transition: 0.15s;
+}
+
+nav li {
+    transition: 0.15s;
+}
+
+nav a:hover, nav li:hover {
+    color: var(--clt-card);
+    background-color: var(--clr--border);
+}
+
+footer {
+    background-color: var(--clr--border);
+}
+
+.wrapper {
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-around;
+    padding: 2rem clamp(1rem, -7.143rem + 21.714vw, 20rem);
+    max-width: 3000px;
+}
+
+footer h2, footer p, .middle_footer>a {
+    color: var(--clr--footer);
+}
+
+footer h2 {
+    margin-bottom: 1rem;
+}
+
+.middle_footer {
+    text-align: middle;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.middle_footer>a:hover {
+    color: var(--clr--h2);
+}
+
+.wrapper>div:last-child {
+    text-align: end;
+}
+
+.right_footer>p {
+    margin-bottom: 1rem;
+}
+
+.right_footer>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right_footer img {
+    width: 3rem;
+}
+
+footer {
+    list-style-type: none;
+}
+
+button:hover, button a:hover {
+    cursor: pointer;
+    color: var(--clt-card);
+    background-color: var(--clr--h1);
+}
